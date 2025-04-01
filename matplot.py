@@ -14,7 +14,7 @@ for i in range(inicio,final+1):
     ventas[i] = int(input('introduzca las ventas en el año: '+str(i)+':'))
 
 fig,ax = plt.subplots()
-ax.plot(ventas.keys(),ventas.values() )
+ax.plot(ventas.keys(),ventas.values(), marker= "*" )
 ax.set_title('Ventas por año')
 ax.set_xlabel('años')
 ax.set_ylabel('ventas')
